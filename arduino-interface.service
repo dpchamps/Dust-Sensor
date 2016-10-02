@@ -1,0 +1,10 @@
+[Unit]
+Description= Interface For Arduino Time Sync
+After=syslog.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/time-sync.py
+
+[Install]
+WantedBy=multi-user.target
