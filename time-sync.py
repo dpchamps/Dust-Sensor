@@ -11,7 +11,7 @@ import datetime
 
 ser = serial.Serial('/dev/ttyACM0', 9600)
 syncByte = "T";
-timeZone = 5
+timeZone = -5
 while True:
 	request = ser.readline().strip('\r\n');
 	if request == syncByte:
