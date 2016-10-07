@@ -19,6 +19,4 @@ while True:
 		t = 60*60*timeZone;
 		dt = "T"+str(d+t)+'\n';
 		ser.write(dt);
-	else:
-		time.sleep(5);
-	time.sleep(1)
+	print request;
